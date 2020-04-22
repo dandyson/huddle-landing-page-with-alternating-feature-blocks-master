@@ -12,7 +12,7 @@ h1 {
 }
 
 .topContent {
-    background-image: url('/images/bg-hero-mobile.svg');
+    background-image: url('images/bg-hero-mobile.svg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -219,15 +219,15 @@ li {
 /* Footer list images */
 
 ul.location {
-    list-style-image: url('/images/icon-location.svg');
+    list-style-image: url('images/icon-location.svg');
 }
 
 ul.phone {
-    list-style-image: url('/images/icon-phone.svg');
+    list-style-image: url('images/icon-phone.svg');
 }
 
 ul.email {
-    list-style-image: url('/images/icon-email.svg');
+    list-style-image: url('images/icon-email.svg');
     margin-bottom: 0;
     padding-bottom: 15px;
 }
@@ -273,7 +273,7 @@ ul.email {
 
     /*General*/
     .topContent {
-        background-image: url('/images/bg-hero-desktop.svg');
+        background-image: url('images/bg-hero-desktop.svg');
     }
 
     /* Navigation */
