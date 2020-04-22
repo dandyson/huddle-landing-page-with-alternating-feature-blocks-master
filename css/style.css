@@ -219,15 +219,15 @@ li {
 /* Footer list images */
 
 ul.location {
-    list-style-image: url('/images/icon-location.svg');
+    list-style-image: url('../images/icon-location.svg');
 }
 
 ul.phone {
-    list-style-image: url('/images/icon-phone.svg');
+    list-style-image: url('../images/icon-phone.svg');
 }
 
 ul.email {
-    list-style-image: url('/images/icon-email.svg');
+    list-style-image: url('../images/icon-email.svg');
     margin-bottom: 0;
     padding-bottom: 15px;
 }
