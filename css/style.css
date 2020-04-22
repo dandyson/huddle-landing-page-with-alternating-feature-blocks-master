@@ -269,7 +269,7 @@ ul.email {
 
 /*************************************************** MEDIA QUERIES FOR DESKTOP ***************************************************/
 
-@media (min-width: 900px) {
+@media (min-width: 500px) {
 
     /*General*/
     .topContent {
