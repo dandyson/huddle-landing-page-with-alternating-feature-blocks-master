@@ -48,6 +48,8 @@ h1 {
 }
 
 #tryItFree {
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
     background-color: white;
     border-radius: 50px;
     border: none;
@@ -56,6 +58,10 @@ h1 {
     -webkit-box-shadow: 2px 2px 16px 8px rgba(0,0,0,0.1);
     -moz-box-shadow: 2px 2px 16px 8px rgba(0,0,0,0.1);
     box-shadow: 2px 2px 16px 8px rgba(0,0,0,0.1);
+}
+
+#tryItFree:hover {
+    transform: scale(1.3);
 }
 
 /*TOP CONTENT*/
@@ -73,6 +79,8 @@ h1 {
 }
 
 #topContentText button {
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
     margin-top: 20px;
     background-color: white;
     border-radius: 50px;
@@ -82,6 +90,10 @@ h1 {
     background-color: #FE52C0;
     color: white;
     font-family: 'Poppins', sans-serif;
+}
+
+#topContentText button:hover {
+    transform: scale(1.3);
 }
 
 #topContentImg {
@@ -134,11 +146,128 @@ h1 {
     width: 90%;
 }
 
+/*CTA Section*/
+
+#ctaDiv {
+    position: relative;
+    top: 65px;
+    background-color: white;;
+    text-align: center;
+    border-radius: 20px;
+    margin: 0 auto;
+    height: 170px;
+    width: 90%;
+    -webkit-box-shadow: 2px 2px 16px 8px rgba(0,0,0,0.1);
+    -moz-box-shadow: 2px 2px 16px 8px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 16px 8px rgba(0,0,0,0.1);
+}
+
+#ctaDiv h1 {
+    font-weight: 700;
+    padding-top: 40px;
+    font-size: 0.9em;
+}
+
+#ctaDiv button {
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    border-radius: 50px;
+    border: none;
+    height: 40px;
+    width: 60%;
+    background-color: #FE52C0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#ctaDiv button:hover {
+    transform: scale(1.3);
+}
+
+#ctaDiv > * {
+    padding: 10px;
+}
+
+/* Footer */
+
+footer {
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: #00252E;
+}
+
+#contactDiv {
+    padding-top: 140px;
+    padding-left: 20px;
+}
+
+#contactDiv img {
+    height: 25px;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    width: 90%;
+    padding-left: 11px;
+    padding-bottom: 10px;
+}
+
+/* Footer list images */
+
+ul.location {
+    list-style-image: url('/images/icon-location.svg');
+}
+
+ul.phone {
+    list-style-image: url('/images/icon-phone.svg');
+}
+
+ul.email {
+    list-style-image: url('/images/icon-email.svg');
+    margin-bottom: 0;
+    padding-bottom: 15px;
+}
+
+/*Footer nav */
+
+#footerNav {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.navList {
+    list-style: none;
+    font-size: 0.85em;
+    padding-left: 10px;
+} 
+
+.navList li {
+    padding: 10px;
+}
+
+/* Social Div */
+
+#socialDiv {
+    text-align: center;
+    padding: 20px;
+}
+
+#socialDiv img {
+    height: 25px;
+    padding: 5px;
+}
+
+#socialDiv p {
+    margin-top: 15px;
+    font-size: 0.7em;
+}
 
 
-
-
-/****************** MEDIA QUERIES FOR DESKTOP *******************/
+/*************************************************** MEDIA QUERIES FOR DESKTOP ***************************************************/
 
 @media (min-width: 900px) {
 
@@ -182,4 +311,106 @@ h1 {
         height: 400px;
         margin-top: 35px;
     }
+
+    /* CARDS */
+
+    .cards {
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: 50% 50%;
+        height: 350px;
+    }
+
+    .cardImages {
+        padding-top: 50px;
+        text-align: center;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        height: 65%;
+    }
+    
+    .cardText {
+        padding-left: 150px;
+        text-align: left;
+        width: 85%;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .cardText p {
+        margin: 0px;
+        width: 85%;
+    }
+
+    .cardText > h1 {
+        margin-top: 120px;
+    }
+
+    /*Middle card content swap*/
+
+    #midCardImg {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    
+    #midCardText {
+        padding-left: 30px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+/*CTA Section*/
+
+#ctaDiv {
+    width: 40%;
+}
+
+/* Footer */
+
+footer {
+    height: 500px;
+}
+
+#footerGrid {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+}
+
+#contactDiv {
+    padding-top: 140px;
+    padding-left: 70px;
+}
+
+#footerNav {
+    margin-top: 160px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.navListLeft {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.navListRight {
+    padding-left: 20px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+
+/* Social Div */
+
+#socialDiv {
+    margin-top: 160px;
+    text-align: center;
+    padding: 20px;
+}
+
+#socialDiv p {
+    margin-top: 175px;
+    font-size: 0.7em;
+}
 }
